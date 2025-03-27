@@ -6,14 +6,14 @@ frappe.pages['wren-ai'].on_page_load = function(wrapper) {
 	let url = frappe.boot?.talk_to_data?.url;
 	if (url) {
 		// remove border from iframe
-		$(`
+		$(page.parent).html(`
 			<iframe src="${url}" width="100%" style="height: 93vh; border: none;"></iframe>
-		`).replaceAll(page.parent);
+		`);
 	}else{
-		$(`
+		$(page.parent).html(`
 			<div class="alert alert-danger">
 				No URL found
 			</div>
-		`).replaceAll(page.parent);
+		`);
 	}
 }
