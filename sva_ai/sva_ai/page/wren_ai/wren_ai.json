@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2025-03-27 15:15:39.157868",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 3,
+ "modified": "2025-03-28 01:26:44.546096",
+ "modified_by": "Administrator",
+ "module": "SVA AI",
+ "name": "wren-ai",
+ "owner": "Administrator",
+ "page_name": "wren-ai",
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Talk To Your Data"
+}
