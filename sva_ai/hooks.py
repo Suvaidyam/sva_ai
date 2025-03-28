@@ -20,6 +20,12 @@ app_license = "mit"
 # 		"has_permission": "sva_ai.api.permission.has_app_permission"
 # 	}
 # ]
+fixtures = [
+    # {
+    #     "dt": "Workspace",
+    #     "filters": {"name": "mGrant AI"}
+    # }
+]
 extend_bootinfo = "sva_ai.boot.boot_session"
 # Includes in <head>
 # ------------------

@@ -1,0 +1,37 @@
+[
+ {
+  "app": "mgrant",
+  "charts": [],
+  "content": "[{\"type\":\"header\",\"data\":{\"text\":\"mGrant AI\"}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "external_link": null,
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "today",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "mGrant AI",
+  "link_to": "wren-ai",
+  "link_type": "Page",
+  "links": [],
+  "modified": "2025-03-28 02:07:02.681193",
+  "module": "Mgrant",
+  "name": "mGrant AI",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "role": "Administrator"
+   }
+  ],
+  "sequence_id": 27.0,
+  "shortcuts": [],
+  "title": "mGrant AI",
+  "type": "Link"
+ }
+]
