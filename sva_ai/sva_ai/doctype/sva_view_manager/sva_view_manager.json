@@ -1,0 +1,98 @@
+{
+ "actions": [
+  {
+   "action": "sva_ai.sva_ai.doctype.sva_view_manager.sva_view_manager.execute_code",
+   "action_type": "Server Action",
+   "hidden": 1,
+   "label": "Execute"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2025-04-15 16:22:29.453434",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "view_type",
+  "refresh_frequency",
+  "column",
+  "sql",
+  "output",
+  "sql_output"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "view_type",
+   "fieldtype": "Select",
+   "label": "View Type",
+   "options": "Logical View\nMaterialized View"
+  },
+  {
+   "default": "1 Hour",
+   "depends_on": "eval: doc.view_type == 'Materialized View';",
+   "fieldname": "refresh_frequency",
+   "fieldtype": "Select",
+   "label": "Refresh Frequency",
+   "options": "30 Minutes\n1 Hour\n3 Hour\n8 Hour\n12 Hour\n1 Day\nWeekly\nMonthly (start)\nMonthly (end)"
+  },
+  {
+   "fieldname": "sql",
+   "fieldtype": "Code",
+   "label": "SQL",
+   "options": "SQL"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Code",
+   "label": "Output",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sql_output",
+   "fieldtype": "HTML",
+   "label": "SQL Output",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column",
+   "fieldtype": "Table",
+   "label": "Column",
+   "options": "SVA View Columns"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-16 17:03:30.233766",
+ "modified_by": "Administrator",
+ "module": "SVA AI",
+ "name": "SVA View Manager",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}
